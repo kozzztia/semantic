@@ -12,17 +12,59 @@
 <h1>once title</h1>
 
 <section>
+    <h2>iframes</h2>
+
+    <video width="450"
+           height="250"
+           controls
+           loop
+           autoplay
+           muted
+           playsinline
+           src="video/video.mp4">
+    </video>
+    <!--    playsinline for mobil, poster for picture before loading-->
+    <!--    classic variant  with  autoplay  and  muted  (to play mast  be  autoplay and muted as params)-->
+
+    <video width="450" height="250">
+        <source src="video/video.mp4" type="video/mp4">
+        <p>no one can see your video</p>
+    </video>
+    <!--        use other  formats for other  browsers-->
+
+    <audio controls>
+        <source src="video/audio.ogg" type="audio/ogg">
+        <p>no one can see your audio</p>
+    </audio>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1066.3909866408042!2d30.618521072195993!3d50.528227476745805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d140b730c96f%3A0x818d6c4990eae0e5!2z0KDQtdC80L7QvdGCINC-0LTQtdC20LTRiw!5e0!3m2!1sru!2sua!4v1770197119943!5m2!1sru!2sua"
+            width="200" height="200" frameborder="0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6PL2TqBdz0I?si=aSIRAVfy_KumrdJ8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; muted;"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+
+    </iframe>
+
+</section>
+
+<section>
     <h2>blockquote</h2>
 
     <article>
         <h3>title</h3>
-<!--first-->
+        <!--first-->
         <blockquote cite="https://www.google.com">
             <p>
                 blockquote
             </p>
         </blockquote>
-<!--second-->
+        <!--second-->
         <blockquote>
             <p>
                 blockquote
@@ -35,11 +77,11 @@
                 where from this blockquote....
             </cite>
         </p>
-<!--        we can use cite  for simantic where  from  blockquote. id like  when  the cite as parameter  in  blockquote -->
+        <!--        we can use cite  for simantic where  from  blockquote. id like  when  the cite as parameter  in  blockquote -->
         <p>
             Lorem <q cite="#">ipsum</q> dolor sit.
         </p>
-<!--        short blockquote -->
+        <!--        short blockquote -->
     </article>
 </section>
 
@@ -50,13 +92,11 @@
         <img src="image/girl.jpg"
              alt="girl"
              width="300" height="200"
-            loading="lazy">
-<!--        loading  for  optimal loading when  img  in viewport-->
-<!--        default values in  sizes  mast  be  for start when rendered page-->
-<!--        alt  mast  be for  screen reader  when  it has seance. when  he  wos decorate   alt can be empty alt=""-->
+             loading="lazy">
+        <!--        loading  for  optimal loading when  img  in viewport-->
+        <!--        default values in  sizes  mast  be  for start when rendered page-->
+        <!--        alt  mast  be for  screen reader  when  it has seance. when  he  wos decorate   alt can be empty alt=""-->
     </figure>
-
-
 
 
 </section>
@@ -74,7 +114,7 @@
         <button type="button">button</button>
     </form>
 </section>
-<!--when  we  use  button inside page - we mast type  type="button" -->
+<!--when  we  use  button inside page - we mast use  type="button" -->
 
 <section>
     <h2>anchors</h2>
