@@ -1,33 +1,143 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-td{
+td {
     border: 1px solid gray;
 }
 
-form{
+form {
     color: #0d0d29;
-    fieldset{
+
+    fieldset {
         display: flex;
         flex-direction: column;
-        gap : 10px;
-        label{
+        gap: 10px;
+
+        label {
             width: 100%;
             display: flex;
-            span{
+
+            span {
                 max-width: 100px;
                 width: 100%;
             }
-            input, textarea{
+
+            input, textarea {
                 width: 100%;
 
             }
-            input[type=checkbox],input[type=radio]{
+
+            input[type=checkbox], input[type=radio] {
                 width: auto;
                 margin-right: auto;
             }
 
+        }
+    }
+}
+
+.semantic {
+    max-width: 1200px;
+    min-height: 200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: 100px auto;
+    gap: 10px;
+
+    grid-template-areas: 'header header header'
+    'aside main main'
+    'aside main main'
+    'footer footer footer';
+
+    header, footer, aside, main{
+        padding: 10px;
+        width :100%;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    header, footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+    }
+
+    aside {
+        ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    main {
+        background: rgba(128, 128, 128, 0.2);
+
+        h1 {
+            text-align: center;
+        }
+
+    }
+
+    section {
+
+        h2 {
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        figure {
+            height: auto;
+            min-height: 300px;
+            picture, img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+
+            fieldset{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+            }
         }
     }
 }
