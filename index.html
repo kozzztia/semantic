@@ -13,45 +13,63 @@
 
 <section>
     <h2>form</h2>
+    <fieldset>
+        <legend>Group of inputs</legend>
+        <!--            legend is a title  in form without h1-9-->
 
-    <form method="post">
+        <label for="test">
+            <span>test:</span>
+            <input id="test" name="test" type="text" placeholder="test"  required autocomplete="off" form="test-form" >
+            <!--                inputmode  for  keyboard in viewport-->
+        </label>
+    </fieldset>
+
+    <form method="post" id="test-form">
         <fieldset>
             <legend>Group of inputs</legend>
 <!--            legend is a title  in form without h1-9-->
 
+            <label for="tel">
+                <span>Phone:</span>
+                <input id="tel" name="tel" type="tel"
+                       pattern="\+380[0-9]{9}"
+                       placeholder="+380XXXXXXXXX"
+                       required
+                       inputmode="tel"  maxlength="13"
+                       oninvalid="this.setCustomValidity('go away')"
+                >
+            </label>
+
+
             <label for="name">
                 <span>Name:</span>
-                <input id="name" name="name" type="text" placeholder="Name" autocomplete="name" required>
+                <input id="name" name="username" type="text" placeholder="Name"  required autocomplete="off" autofocus >
+<!--                inputmode  for  keyboard in viewport-->
             </label>
 
             <label for="number">
                 <span>Number:</span>
-                <input id="number" name="number" type="number" placeholder="Number" required>
+                <input id="number" name="number" type="number" placeholder="Number"  required>
             </label>
 
             <label for="email">
                 <span>Email:</span>
-                <input id="email" name="email" type="email" placeholder="Email" autocomplete="email" required>
+                <input id="email" name="email" type="email" placeholder="Email" autocomplete="off" required>
             </label>
 
             <label for="url">
                 <span>Website:</span>
-                <input id="url" name="url" type="url" placeholder="https://example.com" autocomplete="url" required>
-            </label>
-
-            <label for="tel">
-                <span>Phone:</span>
-                <input id="tel" name="tel" type="tel" placeholder="+380..." autocomplete="tel" required>
+                <input id="url" name="url" type="url" placeholder="https://example.com"  required>
             </label>
 
             <label for="search">
                 <span>Search:</span>
-                <input id="search" name="search" type="search" placeholder="Search..." autocomplete="on" required>
+                <input id="search" name="search" type="search" placeholder="Search..."  required>
             </label>
 
             <label for="password">
                 <span>Password:</span>
-                <input id="password" name="password" type="password" placeholder="Password"
+                <input id="password" name="currentpassword" type="password" placeholder="Password"
                        autocomplete="current-password" required>
                 <button type="button" onclick="togglePassword()">Show</button>
             </label>
@@ -61,10 +79,10 @@
                 <input id="time" name="time" type="time" required>
             </label>
 
-            <label for="date">
-                <span>Date:</span>
-                <input id="date" name="date" type="date" required>
-            </label>
+<!--            <label for="date">-->
+<!--                <span>Date:</span>-->
+<!--                <input id="date" name="date" type="date" required>-->
+<!--            </label>-->
 
             <!--            <label for="week">-->
             <!--                <span>Week:</span>-->
@@ -76,10 +94,10 @@
             <!--                <input id="month" name="month" type="month" required>-->
             <!--            </label>-->
 
-            <label for="date-time-local">
-                <span>Date-Time:</span>
-                <input id="date-time-local" name="date-time-local" type="datetime-local" required>
-            </label>
+<!--            <label for="date-time-local">-->
+<!--                <span>Date-Time:</span>-->
+<!--                <input id="date-time-local" name="date-time-local" type="datetime-local" required>-->
+<!--            </label>-->
 
             <label for="color">
                 <span>color:</span>
@@ -103,7 +121,7 @@
 
             <label for="textarea">
                 <span>textarea:</span>
-                <textarea id="textarea" name="textarea" rows="4">textarea</textarea>
+                <textarea id="textarea" name="textarea" rows="4" placeholder="textarea"></textarea>
             </label>
 
             <label for="select">
@@ -132,10 +150,10 @@
                     </optgroup>
                 </select>
 <!--                opt group for group of values-->
-<!--                <option value="" disabled selected>values</option> loock like  placeholder, and  user cant  do  sjmething  without value-->
+<!--                <option value="" disabled selected>values</option> look like  placeholder, and  user cant  do  sjmething  without value-->
             </label>
 
-            <fieldset>
+            <fieldset disabled>
                 <legend>checkbox:</legend>
                 <fieldset>
                     <label for="male">
@@ -150,6 +168,8 @@
                 </fieldset>
             </fieldset>
         </fieldset>
+
+        <button type="submit">Submit</button>
 
         <script>
             function togglePassword() {
