@@ -19,7 +19,7 @@ form{
                 max-width: 100px;
                 width: 100%;
             }
-            input{
+            input, textarea{
                 width: 100%;
 
             }
