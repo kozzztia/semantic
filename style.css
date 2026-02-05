@@ -52,9 +52,23 @@ form {
     'aside main main'
     'footer footer footer';
 
+    @media (max-width: 768px) {
+        grid-template-rows: 100px auto auto 100px;
+        grid-template-columns: auto;
+        grid-template-areas: 'header'
+                            'aside'
+                            'main'
+                            'footer';
+    }
+
+    ul{
+        background: rgba(0, 128, 0, 0.2);
+    }
+
     header, footer, aside, main{
         padding: 10px;
         width :100%;
+        background: rgba(128, 128, 128, 0.2);
     }
 
     header {
@@ -90,7 +104,7 @@ form {
     }
 
     aside {
-        ol {
+        ul {
             list-style: none;
             margin: 0;
             padding: 0;
@@ -98,19 +112,24 @@ form {
             display: flex;
             flex-direction: column;
             gap: 10px;
+
+            @media (max-width: 768px) {
+               flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
         }
     }
 
     main {
-        background: rgba(128, 128, 128, 0.2);
 
         h1 {
             text-align: center;
         }
-
     }
 
     section {
+        background: rgba(139, 0, 0, 0.2);
 
         h2 {
             text-align: left;
