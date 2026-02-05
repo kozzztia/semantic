@@ -12,43 +12,160 @@
 <h1>once title</h1>
 
 <section>
+    <h2>form</h2>
+
+    <form method="post">
+        <fieldset>
+            <legend>Group of inputs</legend>
+
+            <label for="name">
+                <span>Name:</span>
+                <input id="name" name="name" type="text" placeholder="Name" autocomplete="name" required>
+            </label>
+
+            <label for="number">
+                <span>Number:</span>
+                <input id="number" name="number" type="number" placeholder="Number" required>
+            </label>
+
+            <label for="email">
+                <span>Email:</span>
+                <input id="email" name="email" type="email" placeholder="Email" autocomplete="email" required>
+            </label>
+
+            <label for="url">
+                <span>Website:</span>
+                <input id="url" name="url" type="url" placeholder="https://example.com" autocomplete="url" required>
+            </label>
+
+            <label for="tel">
+                <span>Phone:</span>
+                <input id="tel" name="tel" type="tel" placeholder="+380..." autocomplete="tel" required>
+            </label>
+
+            <label for="search">
+                <span>Search:</span>
+                <input id="search" name="search" type="search" placeholder="Search..." autocomplete="on" required>
+            </label>
+
+            <label for="password">
+                <span>Password:</span>
+                <input id="password" name="password" type="password" placeholder="Password"
+                       autocomplete="current-password" required>
+                <button type="button" onclick="togglePassword()">Show</button>
+            </label>
+
+            <label for="time">
+                <span>Time:</span>
+                <input id="time" name="time" type="time" required>
+            </label>
+
+            <label for="date">
+                <span>Date:</span>
+                <input id="date" name="date" type="date" required>
+            </label>
+
+            <!--            <label for="week">-->
+            <!--                <span>Week:</span>-->
+            <!--                <input id="week" name="week" type="week" required>-->
+            <!--            </label>-->
+
+            <!--            <label for="month">-->
+            <!--                <span>Month:</span>-->
+            <!--                <input id="month" name="month" type="month" required>-->
+            <!--            </label>-->
+
+            <label for="date-time-local">
+                <span>Date-Time:</span>
+                <input id="date-time-local" name="date-time-local" type="datetime-local" required>
+            </label>
+
+            <label for="color">
+                <span>color:</span>
+                <input id="color" name="color" type="color" required>
+            </label>
+
+            <label for="file">
+                <span>file:</span>
+                <input id="file" name="file" type="file" required>
+            </label>
+
+            <label for="checkbox">
+                <span>checkbox:</span>
+                <input id="checkbox" name="checkbox" type="checkbox" value="check" checked required>
+            </label>
+
+            <label for="range">
+                <span>range:</span>
+                <input id="range" name="range" type="range"  max="25" min="19" step="0.1" value="19">
+            </label>
+
+            <fieldset>
+                <legend>checkbox:</legend>
+                <fieldset>
+                    <label for="male">
+                        <span>male:</span>
+                        <input id="male" name="checkbox" type="radio" value="male">
+                    </label>
+
+                    <label for="female">
+                        <span>checkbox:</span>
+                        <input id="female" name="checkbox" type="radio" value="female">
+                    </label>
+                </fieldset>
+            </fieldset>
+
+        </fieldset>
+
+        <script>
+            function togglePassword() {
+                const input = document.getElementById('password');
+                input.type = input.type === 'password' ? 'text' : 'password';
+            }
+        </script>
+    </form>
+
+
+</section>
+
+<section>
     <h2>table</h2>
 
     <table>
         <caption>table title</caption>
         <thead>
-            <tr>
-                <th>title-1</th>
-                <th >title-2</th>
-                <th>title-3</th>
-            </tr>
+        <tr>
+            <th>title-1</th>
+            <th>title-2</th>
+            <th>title-3</th>
+        </tr>
         </thead>
 
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td rowspan="2">3</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-            </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
         </tbody>
 
         <tfoot>
@@ -86,19 +203,20 @@
         <p>no one can see your audio</p>
     </audio>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1066.3909866408042!2d30.618521072195993!3d50.528227476745805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d140b730c96f%3A0x818d6c4990eae0e5!2z0KDQtdC80L7QvdGCINC-0LTQtdC20LTRiw!5e0!3m2!1sru!2sua!4v1770197119943!5m2!1sru!2sua"
-            width="200" height="200" frameborder="0" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+    <!--    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1066.3909866408042!2d30.618521072195993!3d50.528227476745805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d140b730c96f%3A0x818d6c4990eae0e5!2z0KDQtdC80L7QvdGCINC-0LTQtdC20LTRiw!5e0!3m2!1sru!2sua!4v1770197119943!5m2!1sru!2sua"-->
+    <!--            width="200" height="200" frameborder="0" allowfullscreen="" loading="lazy"-->
+    <!--            referrerpolicy="no-referrer-when-downgrade">-->
+    <!--    </iframe>-->
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/6PL2TqBdz0I?si=aSIRAVfy_KumrdJ8"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; muted;"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
+    <!--    <iframe width="560" height="315" src="https://www.youtube.com/embed/6PL2TqBdz0I?si=aSIRAVfy_KumrdJ8"-->
+    <!--            title="YouTube video player"-->
+    <!--            frameborder="0"-->
+    <!--            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; muted;"-->
+    <!--            referrerpolicy="strict-origin-when-cross-origin"-->
+    <!--            allowfullscreen>-->
 
-    </iframe>
+    <!--    </iframe>-->
+
 
 </section>
 
@@ -156,7 +274,7 @@
     <form>
         <h3>form</h3>
 
-        <input type="text" name="name" placeholder="......"/>
+        <input type="text" name="test" placeholder="......" autocomplete="test" required/>
 
         <button type="submit">submit</button>
         <button type="reset">reset</button>

@@ -5,3 +5,29 @@
 td{
     border: 1px solid gray;
 }
+
+form{
+    color: #0d0d29;
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        gap : 10px;
+        label{
+            width: 100%;
+            display: flex;
+            span{
+                max-width: 100px;
+                width: 100%;
+            }
+            input{
+                width: 100%;
+
+            }
+            input[type=checkbox],input[type=radio]{
+                width: auto;
+                margin-right: auto;
+            }
+
+        }
+    }
+}
