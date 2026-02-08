@@ -11,9 +11,58 @@
 <body>
 <h1>once title</h1>
 
+<section class="clip-path">
+    <img src="image/girl.jpg" alt="">
+</section>
+
+<section class="grid">
+
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">11</div>
+    <div class="grid-item">12</div>
+    <div class="grid-item">13</div>
+    <div class="grid-item">14</div>
+    <div class="grid-item">15</div>
+    <div class="grid-item big">16</div>
+    <div class="grid-item">17</div>
+    <div class="grid-item">18</div>
+    <div class="grid-item">19</div>
+    <div class="grid-item">110</div>
+
+</section>
+
+<section class="flex">
+
+    <span class="flex-item">0</span>
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+    <div class="flex-item">5</div>
+    <div class="flex-item">6</div>
+    <div class="flex-item">7</div>
+    <div class="flex-item">8</div>
+    <div class="flex-item">9</div>
+    <div class="flex-item">10</div>
+
+
+</section>
+
 <div class="semantic">
     <header>
-        logo
+        <a href="#" title="logo">
+            <svg width="50px" height="50px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.25 3.75C9.25 4.44036 8.69036 5 8 5C7.30964 5 6.75 4.44036 6.75 3.75C6.75 3.05964 7.30964 2.5 8 2.5C8.69036 2.5 9.25 3.05964 9.25 3.75ZM12 8H9.41901L11.2047 13H9.081L8 9.97321L6.91901 13H4.79528L6.581 8H4V6H12V8Z" fill="#000000"/>
+            </svg>
+        </a>
+<!--        title  attribute  use  in  no text interactive elements-->
+
+
+
 
         <nav>
             <ul>
@@ -43,20 +92,30 @@
         <h1>first  title</h1>
 
         <section>
-            <h2>second title list</h2>
+            <header>
+                <h2>second title list</h2>
+            </header>
 
-            <div>
+
+            <article>
                 decor-banner
-            </div>
+            </article>
+<!--            article can be  banner card all blocks with content -->
 
             <ul>
-                <li>Lorem ipsum dolor.</li>
-                <li>Cumque fugiat, suscipit?</li>
-                <li>Amet, beatae, vero.</li>
-                <li>Cumque, dolor incidunt.</li>
-                <li>Placeat, quod voluptatibus.</li>
-                <li>Ab ad, fugit.</li>
+                <li tabindex="1">Lorem ipsum dolor.</li>
+                <li tabindex="2">Cumque fugiat, suscipit?</li>
+                <li tabindex="3">Amet, beatae, vero.</li>
+                <li tabindex="5">Cumque, dolor incidunt.</li>
+                <li tabindex="4">Placeat, quod voluptatibus.</li>
+                <li tabindex="-1">Ab ad, fugit.</li>
             </ul>
+
+            <footer>
+                footer
+            </footer>
+
+<!--            header and footer can be in section-->
 
         </section>
 
