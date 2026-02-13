@@ -11,662 +11,717 @@
 <body>
 <h1>once title</h1>
 
-<section class="clip-path">
-    <img src="image/girl.jpg" alt="">
-</section>
-
-<section class="grid">
-
-    <div class="grid-item">1</div>
-    <div class="grid-item">2</div>
-    <div class="grid-item">3</div>
-    <div class="grid-item">4</div>
-    <div class="grid-item">5</div>
-    <div class="grid-item">11</div>
-    <div class="grid-item">12</div>
-    <div class="grid-item">13</div>
-    <div class="grid-item">14</div>
-    <div class="grid-item">15</div>
-    <div class="grid-item big">16</div>
-    <div class="grid-item">17</div>
-    <div class="grid-item">18</div>
-    <div class="grid-item">19</div>
-    <div class="grid-item">110</div>
-
-</section>
-
-<section class="flex">
-
-    <span class="flex-item">0</span>
-    <div class="flex-item">1</div>
-    <div class="flex-item">2</div>
-    <div class="flex-item">3</div>
-    <div class="flex-item">4</div>
-    <div class="flex-item">5</div>
-    <div class="flex-item">6</div>
-    <div class="flex-item">7</div>
-    <div class="flex-item">8</div>
-    <div class="flex-item">9</div>
-    <div class="flex-item">10</div>
-
-
-</section>
-
-<div class="semantic">
-    <header>
-        <a href="#" title="logo">
-            <svg width="50px" height="50px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.25 3.75C9.25 4.44036 8.69036 5 8 5C7.30964 5 6.75 4.44036 6.75 3.75C6.75 3.05964 7.30964 2.5 8 2.5C8.69036 2.5 9.25 3.05964 9.25 3.75ZM12 8H9.41901L11.2047 13H9.081L8 9.97321L6.91901 13H4.79528L6.581 8H4V6H12V8Z" fill="#000000"/>
-            </svg>
-        </a>
-<!--        title  attribute  use  in  no text interactive elements-->
-
-
-
-
-        <nav>
-            <ul>
-                <li><a href="#">one</a></li>
-                <li><a href="#">two</a></li>
-                <li><a href="#">three</a></li>
-                <li><a href="#">four</a></li>
-                <li><a href="#">five</a></li>
-            </ul>
-        </nav>
-
-    </header>
-
-    <aside>
-        <nav>
-            <ul>
-                <li><a href="#">one</a></li>
-                <li><a href="#">two</a></li>
-                <li><a href="#">three</a></li>
-                <li><a href="#">four</a></li>
-                <li><a href="#">five</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-    <main>
-        <h1>first  title</h1>
-
-        <section>
-            <header>
-                <h2>second title list</h2>
-            </header>
-
-
-            <article>
-                decor-banner
-            </article>
-<!--            article can be  banner card all blocks with content -->
-
-            <ul>
-                <li tabindex="1">Lorem ipsum dolor.</li>
-                <li tabindex="2">Cumque fugiat, suscipit?</li>
-                <li tabindex="3">Amet, beatae, vero.</li>
-                <li tabindex="5">Cumque, dolor incidunt.</li>
-                <li tabindex="4">Placeat, quod voluptatibus.</li>
-                <li tabindex="-1">Ab ad, fugit.</li>
-            </ul>
-
-            <footer>
-                footer
-            </footer>
-
-<!--            header and footer can be in section-->
-
-        </section>
-
-        <section>
-            <h2>second title article</h2>
-
-            <article>
-                <h3><strong>third <span>title</span></strong></h3>
-                <p>Lorem <i>ipsum</i> dolor sit amet, consectetur adipisicing elit. Et, quod!</p>
-                <p>Autem cupiditate, dolorem eos <strong>excepturi</strong> impedit iusto molestias quas ullam.</p>
-                <p>Assumenda beatae consequatur consequuntur ipsum nulla saepe tempora ut voluptatibus.</p>
-                <p>Consectetur error illo inventore nam odit porro quas sequi tenetur!</p>
-                <p><a href="#" target="_blank">Consequuntur</a> dolorum ex impedit libero molestiae nihil nulla perferendis voluptatibus!</p>
-
-                <figure>
-                    <picture>
-
-                        <source media="(min-width: 1240px)" srcset="image/girl-2.jpg">
-                        <source media="(min-width: 678px)" srcset="image/girl-3.jpg">
-                        <source media="(min-width: 390px)" srcset="image/girl-4.jpg">
-                        <img src="image/girl.jpg" alt="example girlgirl">
-
-                    </picture>
-
-                    <figcaption>description</figcaption>
-
-                </figure>
-
-            </article>
-        </section>
-
-        <section>
-            <h2>second title form</h2>
-            <form>
-                <fieldset>
-                    <legend>form <span>title</span></legend>
-
-                    <label for="test-1">
-                        <span>text-1:</span>
-                        <input type="text" name="name-1" id="test-1" placeholder="name-1" required pattern="[a-zA-Z]+"/>
-                    </label>
-                    <label for="test-2">
-                        <span>text-2:</span>
-                        <input type="text" name="name-2" id="test-2" placeholder="name-2" required pattern="[a-zA-Z]+"/>
-                    </label>
-                    <label for="test-3">
-                        <span>text-3:</span>
-                        <input type="text" name="name-3" id="test-3" placeholder="name-3" required pattern="[a-zA-Z]+"/>
-                    </label>
-                </fieldset>
-
-                <button type="submit">submit</button>
-            </form>
-
-        </section>
-
-    </main>
-
-    <footer>
-        <a href="tel:000">+30812345605</a>
-
-        <nav>
-            <ul>
-                <li><a href="#">one</a></li>
-                <li><a href="#">two</a></li>
-                <li><a href="#">three</a></li>
-                <li><a href="#">four</a></li>
-                <li><a href="#">five</a></li>
-            </ul>
-        </nav>
-    </footer>
-</div>
-
-
-<section>
-    <h2>form</h2>
-    <fieldset>
-        <legend>Group of inputs</legend>
-        <!--            legend is a title  in form without h1-9-->
-
-        <label for="test">
-            <span>test:</span>
-            <input id="test" name="test" type="text" placeholder="test"  required autocomplete="off" form="test-form" >
-            <!--                inputmode  for  keyboard in viewport-->
-        </label>
-    </fieldset>
-
-    <form method="post" id="test-form">
-        <fieldset>
-            <legend>Group of inputs</legend>
-<!--            legend is a title  in form without h1-9-->
-
-            <label for="tel">
-                <span>Phone:</span>
-                <input id="tel" name="tel" type="tel"
-                       pattern="\+380[0-9]{9}"
-                       placeholder="+380XXXXXXXXX"
-                       required
-                       inputmode="tel"  maxlength="13"
-                       oninvalid="this.setCustomValidity('go away')"
-                >
-            </label>
-
-
-            <label for="name">
-                <span>Name:</span>
-                <input id="name" name="username" type="text" placeholder="Name"  required autocomplete="off" autofocus >
-<!--                inputmode  for  keyboard in viewport-->
-            </label>
-
-            <label for="number">
-                <span>Number:</span>
-                <input id="number" name="number" type="number" placeholder="Number"  required>
-            </label>
-
-            <label for="email">
-                <span>Email:</span>
-                <input id="email" name="email" type="email" placeholder="Email" autocomplete="off" required>
-            </label>
-
-            <label for="url">
-                <span>Website:</span>
-                <input id="url" name="url" type="url" placeholder="https://example.com"  required>
-            </label>
-
-            <label for="search">
-                <span>Search:</span>
-                <input id="search" name="search" type="search" placeholder="Search..."  required>
-            </label>
-
-            <label for="password">
-                <span>Password:</span>
-                <input id="password" name="currentpassword" type="password" placeholder="Password"
-                       autocomplete="current-password" required>
-                <button type="button" onclick="togglePassword()">Show</button>
-            </label>
-
-            <label for="time">
-                <span>Time:</span>
-                <input id="time" name="time" type="time" required>
-            </label>
-
-<!--            <label for="date">-->
-<!--                <span>Date:</span>-->
-<!--                <input id="date" name="date" type="date" required>-->
-<!--            </label>-->
-
-            <!--            <label for="week">-->
-            <!--                <span>Week:</span>-->
-            <!--                <input id="week" name="week" type="week" required>-->
-            <!--            </label>-->
-
-            <!--            <label for="month">-->
-            <!--                <span>Month:</span>-->
-            <!--                <input id="month" name="month" type="month" required>-->
-            <!--            </label>-->
-
-<!--            <label for="date-time-local">-->
-<!--                <span>Date-Time:</span>-->
-<!--                <input id="date-time-local" name="date-time-local" type="datetime-local" required>-->
-<!--            </label>-->
-
-            <label for="color">
-                <span>color:</span>
-                <input id="color" name="color" type="color" required>
-            </label>
-
-            <label for="file">
-                <span>file:</span>
-                <input id="file" name="file" type="file" required>
-            </label>
-
-            <label for="checkbox">
-                <span>checkbox:</span>
-                <input id="checkbox" name="checkbox" type="checkbox" value="check" checked required>
-            </label>
-
-            <label for="range">
-                <span>range:</span>
-                <input id="range" name="range" type="range"  max="25" min="19" step="0.1" value="19">
-            </label>
-
-            <label for="textarea">
-                <span>textarea:</span>
-                <textarea id="textarea" name="textarea" rows="4" placeholder="textarea"></textarea>
-            </label>
-
-            <label for="select">
-                <span>select:</span>
-                <select id="select" name="select">
-                    <option value="" disabled selected>values</option>
-                    <option value="13">2</option>
-                    <option value="14">3</option>
-                    <option value="15">4</option>
-                </select>
-            </label>
-
-            <label for="otp-group">
-                <span>otp-group:</span>
-                <select id="otp-group" name="select">
-                    <option value="" disabled selected>values</option>
-                    <optgroup label="first">
-                        <option value="13">2</option>
-                        <option value="14">3</option>
-                        <option value="15">4</option>
-                    </optgroup>
-                    <optgroup label="second">
-                        <option value="13">5</option>
-                        <option value="14">6</option>
-                        <option value="15">7</option>
-                    </optgroup>
-                </select>
-<!--                opt group for group of values-->
-<!--                <option value="" disabled selected>values</option> look like  placeholder, and  user cant  do  sjmething  without value-->
-            </label>
-
-            <fieldset disabled>
-                <legend>checkbox:</legend>
-                <fieldset>
-                    <label for="male">
-                        <span>male:</span>
-                        <input id="male" name="checkbox" type="radio" value="male">
-                    </label>
-
-                    <label for="female">
-                        <span>checkbox:</span>
-                        <input id="female" name="checkbox" type="radio" value="female">
-                    </label>
-                </fieldset>
-            </fieldset>
-        </fieldset>
-
-        <button type="submit">Submit</button>
-
-        <script>
-            function togglePassword() {
-                const input = document.getElementById('password');
-                input.type = input.type === 'password' ? 'text' : 'password';
-            }
-        </script>
-    </form>
-
-
-</section>
-
-<section>
-    <h2>table</h2>
-
-    <table>
-        <caption>table title</caption>
-        <thead>
-        <tr>
-            <th>title-1</th>
-            <th>title-2</th>
-            <th>title-3</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td rowspan="2">3</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-        </tr>
-        </tbody>
-
-        <tfoot>
-        <tr>
-            <td>final</td>
-            <td colspan="2">information</td>
-        </tr>
-        </tfoot>
-    </table>
-</section>
-
-<section>
-    <h2>iframes</h2>
-
-    <video width="450"
-           height="250"
-           controls
-           loop
-           autoplay
-           muted
-           playsinline
-           src="video/video.mp4">
-    </video>
-    <!--    playsinline for mobil, poster for picture before loading-->
-    <!--    classic variant  with  autoplay  and  muted  (to play mast  be  autoplay and muted as params)-->
-
-    <video width="450" height="250">
-        <source src="video/video.mp4" type="video/mp4">
-        <p>no one can see your video</p>
-    </video>
-    <!--        use other  formats for other  browsers-->
-
-    <audio controls>
-        <source src="video/audio.ogg" type="audio/ogg">
-        <p>no one can see your audio</p>
-    </audio>
-
-    <!--    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1066.3909866408042!2d30.618521072195993!3d50.528227476745805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d140b730c96f%3A0x818d6c4990eae0e5!2z0KDQtdC80L7QvdGCINC-0LTQtdC20LTRiw!5e0!3m2!1sru!2sua!4v1770197119943!5m2!1sru!2sua"-->
-    <!--            width="200" height="200" frameborder="0" allowfullscreen="" loading="lazy"-->
-    <!--            referrerpolicy="no-referrer-when-downgrade">-->
-    <!--    </iframe>-->
-
-    <!--    <iframe width="560" height="315" src="https://www.youtube.com/embed/6PL2TqBdz0I?si=aSIRAVfy_KumrdJ8"-->
-    <!--            title="YouTube video player"-->
-    <!--            frameborder="0"-->
-    <!--            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; muted;"-->
-    <!--            referrerpolicy="strict-origin-when-cross-origin"-->
-    <!--            allowfullscreen>-->
-
-    <!--    </iframe>-->
-
-
-</section>
-
-<section>
-    <h2>blockquote</h2>
-
-    <article>
-        <h3>title</h3>
-        <!--first-->
-        <blockquote cite="https://www.google.com">
-            <p>
-                blockquote
-            </p>
-        </blockquote>
-        <!--second-->
-        <blockquote>
-            <p>
-                blockquote
-            </p>
-        </blockquote>
-        <p>
-            author
-
-            <cite>
-                where from this blockquote....
-            </cite>
-        </p>
-        <!--        we can use cite  for simantic where  from  blockquote. id like  when  the cite as parameter  in  blockquote -->
-        <p>
-            Lorem <q cite="#">ipsum</q> dolor sit.
-        </p>
-        <!--        short blockquote -->
-    </article>
-</section>
-
-<section>
-    <h2>pictures</h2>
-
+<article class="testDecor">
+    <h2>decor</h2>
     <figure>
-        <img src="image/girl.jpg"
-             alt="girl"
-             width="300" height="200"
-             loading="lazy">
-        <!--        loading  for  optimal loading when  img  in viewport-->
-        <!--        default values in  sizes  mast  be  for start when rendered page-->
-        <!--        alt  mast  be for  screen reader  when  it has seance. when  he  wos decorate   alt can be empty alt=""-->
+        <img src="image/girl.jpg" alt="nice girl">
     </figure>
 
+    <section>
+        <h3>title decor</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Debitis quas quasi ratione unde?</p>
+        <p>Aperiam facere iste libero quaerat.</p>
+        <p>Accusantium architecto delectus odio vitae.</p>
+        <p>Accusamus delectus doloribus excepturi reiciendis.</p>
+    </section>
+</article>
+<article class="testDecor">
+    <h2>decor</h2>
+    <figure>
+        <img src="image/girl.jpg" alt="nice girl">
+    </figure>
 
-</section>
+    <section>
+        <h3>title decor</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Debitis quas quasi ratione unde?</p>
+        <p>Aperiam facere iste libero quaerat.</p>
+        <p>Accusantium architecto delectus odio vitae.</p>
+        <p>Accusamus delectus doloribus excepturi reiciendis.</p>
+    </section>
+</article>
 
-<section>
-    <h2>buttons</h2>
+<article class="testDecor">
+    <h2>decor</h2>
+    <figure>
+        <img src="image/girl.jpg" alt="nice girl">
+    </figure>
 
-    <form>
-        <h3>form</h3>
+    <section>
+        <h3>title decor</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Debitis quas quasi ratione unde?</p>
+        <p>Aperiam facere iste libero quaerat.</p>
+        <p>Accusantium architecto delectus odio vitae.</p>
+        <p>Accusamus delectus doloribus excepturi reiciendis.</p>
+    </section>
+</article>
 
-        <input type="text" name="test" placeholder="......" autocomplete="test" required/>
 
-        <button type="submit">submit</button>
-        <button type="reset">reset</button>
-        <button type="button">button</button>
-    </form>
-</section>
-<!--when  we  use  button inside page - we mast use  type="button" -->
 
-<section>
-    <h2>anchors</h2>
+<!--<section class="clip-path">-->
+<!--    <img src="image/girl.jpg" alt="" title="girl">-->
 
-    <ul>
-        <li><a href="#content">scroll to content</a></li>
-        <li><a href="#zip.zip" download>download</a></li>
-        <li><a href="content" target="_blank">to content</a></li>
-    </ul>
-</section>
-<!--when  link   went to  another  page  we  use  anchor and  when  its  do  something  inside page - use  button-->
+<!--    <p>-->
+<!--        <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b>-->
+<!--        <i>Consequuntur eveniet in ipsa molestias nostrum odit quidem tempore, temporibus.</i>-->
+<!--        Nam quas quia recusandae totam.-->
+<!--    </p>-->
 
-<section>
-    <h2>second title text format</h2>
+<!--</section>-->
 
-    <article>
-        <p>
-            <b>Lorem</b> <span>ipsum</span> dolor sit amet, consectetur adipisicing <i>elit</i>.
-        </p>
+<!--<section class="grid">-->
 
-        <h3>
-            <strong>
-                Lorem <span>ipsum</span> dolor sit <em>amet</em>.
-            </strong>
-        </h3>
+<!--    <div class="grid-item">1</div>-->
+<!--    <div class="grid-item">2</div>-->
+<!--    <div class="grid-item">3</div>-->
+<!--    <div class="grid-item">4</div>-->
+<!--    <div class="grid-item">5</div>-->
+<!--    <div class="grid-item">11</div>-->
+<!--    <div class="grid-item">12</div>-->
+<!--    <div class="grid-item">13</div>-->
+<!--    <div class="grid-item">14</div>-->
+<!--    <div class="grid-item">15</div>-->
+<!--    <div class="grid-item big">16</div>-->
+<!--    <div class="grid-item">17</div>-->
+<!--    <div class="grid-item">18</div>-->
+<!--    <div class="grid-item">19</div>-->
+<!--    <div class="grid-item">110</div>-->
 
-        <p>
-            <s>Lorem</s> <u>ipsum</u> dolor sit amet, consectetur adipisicing elit. Aspernatur, quisquam!
-        </p>
+<!--</section>-->
 
-        <span>
-            H<sub>2</sub>O
-            - this is water
-        </span>
+<!--<section class="flex">-->
 
-        <span>
-            (a + b) <sup>2</sup> = a <sup>2</sup> + 2ab + b <sup>2</sup>
-        </span>
-        <p>normal text</p>
-        <p><small>small text</small></p>
+<!--    <span class="flex-item">0</span>-->
+<!--    <div class="flex-item">1</div>-->
+<!--    <div class="flex-item">2</div>-->
+<!--    <div class="flex-item">3</div>-->
+<!--    <div class="flex-item">4</div>-->
+<!--    <div class="flex-item">5</div>-->
+<!--    <div class="flex-item">6</div>-->
+<!--    <div class="flex-item">7</div>-->
+<!--    <div class="flex-item">8</div>-->
+<!--    <div class="flex-item">9</div>-->
+<!--    <div class="flex-item">10</div>-->
 
-    </article>
-</section>
 
-<section>
-    <h2>second title</h2>
+<!--</section>-->
 
-    <article>
-        <h3>third title</h3>
-    </article>
+<!--<div class="semantic">-->
+<!--    <header>-->
+<!--        <a href="#" title="logo">-->
+<!--            <svg width="50px" height="50px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.25 3.75C9.25 4.44036 8.69036 5 8 5C7.30964 5 6.75 4.44036 6.75 3.75C6.75 3.05964 7.30964 2.5 8 2.5C8.69036 2.5 9.25 3.05964 9.25 3.75ZM12 8H9.41901L11.2047 13H9.081L8 9.97321L6.91901 13H4.79528L6.581 8H4V6H12V8Z" fill="#000000"/>-->
+<!--            </svg>-->
+<!--        </a>-->
+<!--&lt;!&ndash;        title  attribute  use  in  no text interactive elements&ndash;&gt;-->
 
-    <article>
-        <h3>third title</h3>
-    </article>
 
-    <article>
-        <h3>third title</h3>
-    </article>
 
-</section>
 
-<section>
-    <h2>second title lists</h2>
+<!--        <nav>-->
+<!--            <ul>-->
+<!--                <li><a href="#">one</a></li>-->
+<!--                <li><a href="#">two</a></li>-->
+<!--                <li><a href="#">three</a></li>-->
+<!--                <li><a href="#">four</a></li>-->
+<!--                <li><a href="#">five</a></li>-->
+<!--            </ul>-->
+<!--        </nav>-->
 
-    <ul>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
-        <li>four</li>
-    </ul>
+<!--    </header>-->
 
-    <ol>
-        <li>
-            <article>
-                <h4>four title</h4>
+<!--    <aside>-->
+<!--        <nav>-->
+<!--            <ul>-->
+<!--                <li><a href="#">one</a></li>-->
+<!--                <li><a href="#">two</a></li>-->
+<!--                <li><a href="#">three</a></li>-->
+<!--                <li><a href="#">four</a></li>-->
+<!--                <li><a href="#">five</a></li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+<!--    </aside>-->
 
-                <p>paragraph 1</p>
-                <p>paragraph 2</p>
-                <p>paragraph 3</p>
-                <p>paragraph 4</p>
+<!--    <main>-->
+<!--        <h1>first  title</h1>-->
 
-                <button>
-                    submit
-                </button>
-            </article>
-        </li>
+<!--        <section>-->
+<!--            <header>-->
+<!--                <h2>second title list</h2>-->
+<!--            </header>-->
 
-        <li>
-            <article>
-                <h4>four title</h4>
 
-                <p>paragraph 1</p>
-                <p>paragraph 2</p>
-                <p>paragraph 3</p>
-                <p>paragraph 4</p>
+<!--            <article>-->
+<!--                decor-banner-->
+<!--            </article>-->
+<!--&lt;!&ndash;            article can be  banner card all blocks with content &ndash;&gt;-->
 
-                <button>
-                    submit
-                </button>
-            </article>
-        </li>
+<!--            <ul>-->
+<!--                <li tabindex="1">Lorem ipsum dolor.</li>-->
+<!--                <li tabindex="2">Cumque fugiat, suscipit?</li>-->
+<!--                <li tabindex="3">Amet, beatae, vero.</li>-->
+<!--                <li tabindex="5">Cumque, dolor incidunt.</li>-->
+<!--                <li tabindex="4">Placeat, quod voluptatibus.</li>-->
+<!--                <li tabindex="-1">Ab ad, fugit.</li>-->
+<!--            </ul>-->
 
-        <li>
-            <article>
-                <h4>four title</h4>
+<!--            <footer>-->
+<!--                footer-->
+<!--            </footer>-->
 
-                <p>paragraph 1</p>
-                <p>paragraph 2</p>
-                <p>paragraph 3</p>
-                <p>paragraph 4</p>
+<!--&lt;!&ndash;            header and footer can be in section&ndash;&gt;-->
 
-                <button>
-                    submit
-                </button>
-            </article>
-        </li>
-    </ol>
+<!--        </section>-->
 
-    <nav>
-        <ul>
-            <li><a href="#">link to 1</a></li>
-            <li><a href="#">link to 2</a></li>
-            <li><a href="#">link to 3</a></li>
-            <li><a href="#">link to 4</a></li>
-        </ul>
-    </nav>
-</section>
+<!--        <section>-->
+<!--            <h2>second title article</h2>-->
 
-<section>
-    <h2>second title paragraph</h2>
+<!--            <article>-->
+<!--                <h3><strong>third <span>title</span></strong></h3>-->
+<!--                <p>Lorem <i>ipsum</i> dolor sit amet, consectetur adipisicing elit. Et, quod!</p>-->
+<!--                <p>Autem cupiditate, dolorem eos <b>excepturi</b> impedit iusto molestias quas ullam.</p>-->
+<!--                <p>Assumenda beatae consequatur consequuntur ipsum nulla saepe tempora ut voluptatibus.</p>-->
+<!--                <p>Consectetur error illo inventore nam odit porro quas sequi tenetur!</p>-->
+<!--                <p><a href="#" target="_blank">Consequuntur</a> dolorum ex impedit libero molestiae nihil nulla perferendis voluptatibus!</p>-->
 
-    <article>
+<!--                <figure>-->
+<!--                    <picture>-->
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ullam.
-        </p>
+<!--                        <source media="(min-width: 1240px)" srcset="image/girl-2.jpg">-->
+<!--                        <source media="(min-width: 678px)" srcset="image/girl-3.jpg">-->
+<!--                        <source media="(min-width: 390px)" srcset="image/girl-4.jpg">-->
+<!--                        <img src="image/girl.jpg" alt="example girlgirl">-->
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ullam.
-        </p>
+<!--                    </picture>-->
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ullam.
-        </p>
+<!--                    <figcaption>description</figcaption>-->
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ullam.
-        </p>
+<!--                </figure>-->
 
-    </article>
+<!--            </article>-->
+<!--        </section>-->
 
-</section>
+<!--        <section>-->
+<!--            <h2>second title form</h2>-->
+<!--            <form>-->
+<!--                <fieldset>-->
+<!--                    <legend>form <span>title</span></legend>-->
+
+<!--                    <label for="test-1">-->
+<!--                        <span>text-1:</span>-->
+<!--                        <input type="text" name="name-1" id="test-1" placeholder="name-1" required pattern="[a-zA-Z]+"/>-->
+<!--                    </label>-->
+<!--                    <label for="test-2">-->
+<!--                        <span>text-2:</span>-->
+<!--                        <input type="text" name="name-2" id="test-2" placeholder="name-2" required pattern="[a-zA-Z]+"/>-->
+<!--                    </label>-->
+<!--                    <label for="test-3">-->
+<!--                        <span>text-3:</span>-->
+<!--                        <input type="text" name="name-3" id="test-3" placeholder="name-3" required pattern="[a-zA-Z]+"/>-->
+<!--                    </label>-->
+<!--                </fieldset>-->
+
+<!--                <button type="submit">submit</button>-->
+<!--            </form>-->
+
+<!--        </section>-->
+
+<!--    </main>-->
+
+<!--    <footer>-->
+<!--        <a href="tel:000">+30812345605</a>-->
+
+<!--        <nav>-->
+<!--            <ul>-->
+<!--                <li><a href="#">one</a></li>-->
+<!--                <li><a href="#">two</a></li>-->
+<!--                <li><a href="#">three</a></li>-->
+<!--                <li><a href="#">four</a></li>-->
+<!--                <li><a href="#">five</a></li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+<!--    </footer>-->
+<!--</div>-->
+
+<!--<section>-->
+<!--    <h2>form</h2>-->
+<!--    <fieldset>-->
+<!--        <legend>Group of inputs</legend>-->
+<!--        &lt;!&ndash;            legend is a title  in form without h1-9&ndash;&gt;-->
+
+<!--        <label for="test">-->
+<!--            <span>test:</span>-->
+<!--            <input id="test" name="test" type="text" placeholder="test"  required autocomplete="off" form="test-form" >-->
+<!--            &lt;!&ndash;                inputmode  for  keyboard in viewport&ndash;&gt;-->
+<!--        </label>-->
+<!--    </fieldset>-->
+
+<!--    <form method="post" id="test-form">-->
+<!--        <fieldset>-->
+<!--            <legend>Group of inputs</legend>-->
+<!--&lt;!&ndash;            legend is a title  in form without h1-9&ndash;&gt;-->
+
+<!--            <label for="tel">-->
+<!--                <span>Phone:</span>-->
+<!--                <input id="tel" name="tel" type="tel"-->
+<!--                       pattern="\+380[0-9]{9}"-->
+<!--                       placeholder="+380XXXXXXXXX"-->
+<!--                       required-->
+<!--                       inputmode="tel"  maxlength="13"-->
+<!--                       oninvalid="this.setCustomValidity('go away')"-->
+<!--                >-->
+<!--            </label>-->
+
+
+<!--            <label for="name">-->
+<!--                <span>Name:</span>-->
+<!--                <input id="name" name="username" type="text" placeholder="Name"  required autocomplete="off" autofocus >-->
+<!--&lt;!&ndash;                inputmode  for  keyboard in viewport&ndash;&gt;-->
+<!--            </label>-->
+
+<!--            <label for="number">-->
+<!--                <span>Number:</span>-->
+<!--                <input id="number" name="number" type="number" placeholder="Number"  required>-->
+<!--            </label>-->
+
+<!--            <label for="email">-->
+<!--                <span>Email:</span>-->
+<!--                <input id="email" name="email" type="email" placeholder="Email" autocomplete="off" required>-->
+<!--            </label>-->
+
+<!--            <label for="url">-->
+<!--                <span>Website:</span>-->
+<!--                <input id="url" name="url" type="url" placeholder="https://example.com"  required>-->
+<!--            </label>-->
+
+<!--            <label for="search">-->
+<!--                <span>Search:</span>-->
+<!--                <input id="search" name="search" type="search" placeholder="Search..."  required>-->
+<!--            </label>-->
+
+<!--            <label for="password">-->
+<!--                <span>Password:</span>-->
+<!--                <input id="password" name="currentpassword" type="password" placeholder="Password"-->
+<!--                       autocomplete="current-password" required>-->
+<!--                <button type="button" onclick="togglePassword()">Show</button>-->
+<!--            </label>-->
+
+<!--            <label for="time">-->
+<!--                <span>Time:</span>-->
+<!--                <input id="time" name="time" type="time" required>-->
+<!--            </label>-->
+
+<!--&lt;!&ndash;            <label for="date">&ndash;&gt;-->
+<!--&lt;!&ndash;                <span>Date:</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                <input id="date" name="date" type="date" required>&ndash;&gt;-->
+<!--&lt;!&ndash;            </label>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;            <label for="week">&ndash;&gt;-->
+<!--            &lt;!&ndash;                <span>Week:</span>&ndash;&gt;-->
+<!--            &lt;!&ndash;                <input id="week" name="week" type="week" required>&ndash;&gt;-->
+<!--            &lt;!&ndash;            </label>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;            <label for="month">&ndash;&gt;-->
+<!--            &lt;!&ndash;                <span>Month:</span>&ndash;&gt;-->
+<!--            &lt;!&ndash;                <input id="month" name="month" type="month" required>&ndash;&gt;-->
+<!--            &lt;!&ndash;            </label>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <label for="date-time-local">&ndash;&gt;-->
+<!--&lt;!&ndash;                <span>Date-Time:</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                <input id="date-time-local" name="date-time-local" type="datetime-local" required>&ndash;&gt;-->
+<!--&lt;!&ndash;            </label>&ndash;&gt;-->
+
+<!--            <label for="color">-->
+<!--                <span>color:</span>-->
+<!--                <input id="color" name="color" type="color" required>-->
+<!--            </label>-->
+
+<!--            <label for="file">-->
+<!--                <span>file:</span>-->
+<!--                <input id="file" name="file" type="file" required>-->
+<!--            </label>-->
+
+<!--            <label for="checkbox">-->
+<!--                <span>checkbox:</span>-->
+<!--                <input id="checkbox" name="checkbox" type="checkbox" value="check" checked required>-->
+<!--            </label>-->
+
+<!--            <label for="range">-->
+<!--                <span>range:</span>-->
+<!--                <input id="range" name="range" type="range"  max="25" min="19" step="0.1" value="19">-->
+<!--            </label>-->
+
+<!--            <label for="textarea">-->
+<!--                <span>textarea:</span>-->
+<!--                <textarea id="textarea" name="textarea" rows="4" placeholder="textarea"></textarea>-->
+<!--            </label>-->
+
+<!--            <label for="select">-->
+<!--                <span>select:</span>-->
+<!--                <select id="select" name="select">-->
+<!--                    <option value="" disabled selected>values</option>-->
+<!--                    <option value="13">2</option>-->
+<!--                    <option value="14">3</option>-->
+<!--                    <option value="15">4</option>-->
+<!--                </select>-->
+<!--            </label>-->
+
+<!--            <label for="otp-group">-->
+<!--                <span>otp-group:</span>-->
+<!--                <select id="otp-group" name="select">-->
+<!--                    <option value="" disabled selected>values</option>-->
+<!--                    <optgroup label="first">-->
+<!--                        <option value="13">2</option>-->
+<!--                        <option value="14">3</option>-->
+<!--                        <option value="15">4</option>-->
+<!--                    </optgroup>-->
+<!--                    <optgroup label="second">-->
+<!--                        <option value="13">5</option>-->
+<!--                        <option value="14">6</option>-->
+<!--                        <option value="15">7</option>-->
+<!--                    </optgroup>-->
+<!--                </select>-->
+<!--&lt;!&ndash;                opt group for group of values&ndash;&gt;-->
+<!--&lt;!&ndash;                <option value="" disabled selected>values</option> look like  placeholder, and  user cant  do  sjmething  without value&ndash;&gt;-->
+<!--            </label>-->
+
+<!--            <fieldset disabled>-->
+<!--                <legend>checkbox:</legend>-->
+<!--                <fieldset>-->
+<!--                    <label for="male">-->
+<!--                        <span>male:</span>-->
+<!--                        <input id="male" name="checkbox" type="radio" value="male">-->
+<!--                    </label>-->
+
+<!--                    <label for="female">-->
+<!--                        <span>checkbox:</span>-->
+<!--                        <input id="female" name="checkbox" type="radio" value="female">-->
+<!--                    </label>-->
+<!--                </fieldset>-->
+<!--            </fieldset>-->
+<!--        </fieldset>-->
+
+<!--        <button type="submit">Submit</button>-->
+
+<!--        <script>-->
+<!--            function togglePassword() {-->
+<!--                const input = document.getElementById('password');-->
+<!--                input.type = input.type === 'password' ? 'text' : 'password';-->
+<!--            }-->
+<!--        </script>-->
+<!--    </form>-->
+
+
+<!--</section>-->
+
+<!--<section>-->
+<!--    <h2>table</h2>-->
+
+<!--    <table>-->
+<!--        <caption>table title</caption>-->
+<!--        <thead>-->
+<!--        <tr>-->
+<!--            <th>title-1</th>-->
+<!--            <th>title-2</th>-->
+<!--            <th>title-3</th>-->
+<!--        </tr>-->
+<!--        </thead>-->
+
+<!--        <tbody>-->
+<!--        <tr>-->
+<!--            <td>1</td>-->
+<!--            <td>2</td>-->
+<!--            <td>3</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>1</td>-->
+<!--            <td>2</td>-->
+<!--            <td>3</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>1</td>-->
+<!--            <td>2</td>-->
+<!--            <td>3</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>1</td>-->
+<!--            <td>2</td>-->
+<!--            <td rowspan="2">3</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>1</td>-->
+<!--            <td>2</td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+
+<!--        <tfoot>-->
+<!--        <tr>-->
+<!--            <td>final</td>-->
+<!--            <td colspan="2">information</td>-->
+<!--        </tr>-->
+<!--        </tfoot>-->
+<!--    </table>-->
+<!--</section>-->
+
+<!--<section>-->
+<!--    <h2>iframes</h2>-->
+
+<!--    <video width="450"-->
+<!--           height="250"-->
+<!--           controls-->
+<!--           loop-->
+<!--           autoplay-->
+<!--           muted-->
+<!--           playsinline-->
+<!--           src="video/video.mp4">-->
+<!--    </video>-->
+<!--    &lt;!&ndash;    playsinline for mobil, poster for picture before loading&ndash;&gt;-->
+<!--    &lt;!&ndash;    classic variant  with  autoplay  and  muted  (to play mast  be  autoplay and muted as params)&ndash;&gt;-->
+
+<!--    <video width="450" height="250">-->
+<!--        <source src="video/video.mp4" type="video/mp4">-->
+<!--        <p>no one can see your video</p>-->
+<!--    </video>-->
+<!--    &lt;!&ndash;        use other  formats for other  browsers&ndash;&gt;-->
+
+<!--    <audio controls>-->
+<!--        <source src="video/audio.ogg" type="audio/ogg">-->
+<!--        <p>no one can see your audio</p>-->
+<!--    </audio>-->
+
+<!--    &lt;!&ndash;    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1066.3909866408042!2d30.618521072195993!3d50.528227476745805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d140b730c96f%3A0x818d6c4990eae0e5!2z0KDQtdC80L7QvdGCINC-0LTQtdC20LTRiw!5e0!3m2!1sru!2sua!4v1770197119943!5m2!1sru!2sua"&ndash;&gt;-->
+<!--    &lt;!&ndash;            width="200" height="200" frameborder="0" allowfullscreen="" loading="lazy"&ndash;&gt;-->
+<!--    &lt;!&ndash;            referrerpolicy="no-referrer-when-downgrade">&ndash;&gt;-->
+<!--    &lt;!&ndash;    </iframe>&ndash;&gt;-->
+
+<!--    &lt;!&ndash;    <iframe width="560" height="315" src="https://www.youtube.com/embed/6PL2TqBdz0I?si=aSIRAVfy_KumrdJ8"&ndash;&gt;-->
+<!--    &lt;!&ndash;            title="YouTube video player"&ndash;&gt;-->
+<!--    &lt;!&ndash;            frameborder="0"&ndash;&gt;-->
+<!--    &lt;!&ndash;            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; muted;"&ndash;&gt;-->
+<!--    &lt;!&ndash;            referrerpolicy="strict-origin-when-cross-origin"&ndash;&gt;-->
+<!--    &lt;!&ndash;            allowfullscreen>&ndash;&gt;-->
+
+<!--    &lt;!&ndash;    </iframe>&ndash;&gt;-->
+
+
+<!--</section>-->
+
+<!--<section>-->
+<!--    <h2>blockquote</h2>-->
+
+<!--    <article>-->
+<!--        <h3>title</h3>-->
+<!--        &lt;!&ndash;first&ndash;&gt;-->
+<!--        <blockquote cite="https://www.google.com">-->
+<!--            <p>-->
+<!--                blockquote-->
+<!--            </p>-->
+<!--        </blockquote>-->
+<!--        &lt;!&ndash;second&ndash;&gt;-->
+<!--        <blockquote>-->
+<!--            <p>-->
+<!--                blockquote-->
+<!--            </p>-->
+<!--        </blockquote>-->
+<!--        <p>-->
+<!--            author-->
+
+<!--            <cite>-->
+<!--                where from this blockquote....-->
+<!--            </cite>-->
+<!--        </p>-->
+<!--        &lt;!&ndash;        we can use cite  for simantic where  from  blockquote. id like  when  the cite as parameter  in  blockquote &ndash;&gt;-->
+<!--        <p>-->
+<!--            Lorem <q cite="#">ipsum</q> dolor sit.-->
+<!--        </p>-->
+<!--        &lt;!&ndash;        short blockquote &ndash;&gt;-->
+<!--    </article>-->
+<!--</section>-->
+
+<!--<section>-->
+<!--    <h2>pictures</h2>-->
+
+<!--    <figure>-->
+<!--        <img src="image/girl.jpg"-->
+<!--             alt="girl"-->
+<!--             width="300" height="200"-->
+<!--             loading="lazy">-->
+<!--        &lt;!&ndash;        loading  for  optimal loading when  img  in viewport&ndash;&gt;-->
+<!--        &lt;!&ndash;        default values in  sizes  mast  be  for start when rendered page&ndash;&gt;-->
+<!--        &lt;!&ndash;        alt  mast  be for  screen reader  when  it has seance. when  he  wos decorate   alt can be empty alt=""&ndash;&gt;-->
+<!--    </figure>-->
+
+
+<!--</section>-->
+
+<!--<section>-->
+<!--    <h2>buttons</h2>-->
+
+<!--    <form>-->
+<!--        <h3>form</h3>-->
+
+<!--        <input type="text" name="test" placeholder="......" autocomplete="test" required/>-->
+
+<!--        <button type="submit">submit</button>-->
+<!--        <button type="reset">reset</button>-->
+<!--        <button type="button">button</button>-->
+<!--    </form>-->
+<!--</section>-->
+<!--&lt;!&ndash;when  we  use  button inside page - we mast use  type="button" &ndash;&gt;-->
+
+<!--<section>-->
+<!--    <h2>anchors</h2>-->
+
+<!--    <ul>-->
+<!--        <li><a href="#content">scroll to content</a></li>-->
+<!--        <li><a href="#zip.zip" download>download</a></li>-->
+<!--        <li><a href="content" target="_blank">to content</a></li>-->
+<!--    </ul>-->
+<!--</section>-->
+<!--&lt;!&ndash;when  link   went to  another  page  we  use  anchor and  when  its  do  something  inside page - use  button&ndash;&gt;-->
+
+<!--<section>-->
+<!--    <h2>second title text format</h2>-->
+
+<!--    <article>-->
+<!--        <p>-->
+<!--            <b>Lorem</b> <span>ipsum</span> dolor sit amet, consectetur adipisicing <i>elit</i>.-->
+<!--        </p>-->
+
+<!--        <h3>-->
+<!--            <strong>-->
+<!--                Lorem <span>ipsum</span> dolor sit <em>amet</em>.-->
+<!--            </strong>-->
+<!--        </h3>-->
+
+<!--        <p>-->
+<!--            <s>Lorem</s> <u>ipsum</u> dolor sit amet, consectetur adipisicing elit. Aspernatur, quisquam!-->
+<!--        </p>-->
+
+<!--        <span>-->
+<!--            H<sub>2</sub>O-->
+<!--            - this is water-->
+<!--        </span>-->
+
+<!--        <span>-->
+<!--            (a + b) <sup>2</sup> = a <sup>2</sup> + 2ab + b <sup>2</sup>-->
+<!--        </span>-->
+<!--        <p>normal text</p>-->
+<!--        <p><small>small text</small></p>-->
+
+<!--    </article>-->
+<!--</section>-->
+
+<!--<section>-->
+<!--    <h2>second title</h2>-->
+
+<!--    <article>-->
+<!--        <h3>third title</h3>-->
+<!--    </article>-->
+
+<!--    <article>-->
+<!--        <h3>third title</h3>-->
+<!--    </article>-->
+
+<!--    <article>-->
+<!--        <h3>third title</h3>-->
+<!--    </article>-->
+
+<!--</section>-->
+
+<!--<section>-->
+<!--    <h2>second title lists</h2>-->
+
+<!--    <ul>-->
+<!--        <li>one</li>-->
+<!--        <li>two</li>-->
+<!--        <li>three</li>-->
+<!--        <li>four</li>-->
+<!--    </ul>-->
+
+<!--    <ol>-->
+<!--        <li>-->
+<!--            <article>-->
+<!--                <h4>four title</h4>-->
+
+<!--                <p>paragraph 1</p>-->
+<!--                <p>paragraph 2</p>-->
+<!--                <p>paragraph 3</p>-->
+<!--                <p>paragraph 4</p>-->
+
+<!--                <button>-->
+<!--                    submit-->
+<!--                </button>-->
+<!--            </article>-->
+<!--        </li>-->
+
+<!--        <li>-->
+<!--            <article>-->
+<!--                <h4>four title</h4>-->
+
+<!--                <p>paragraph 1</p>-->
+<!--                <p>paragraph 2</p>-->
+<!--                <p>paragraph 3</p>-->
+<!--                <p>paragraph 4</p>-->
+
+<!--                <button>-->
+<!--                    submit-->
+<!--                </button>-->
+<!--            </article>-->
+<!--        </li>-->
+
+<!--        <li>-->
+<!--            <article>-->
+<!--                <h4>four title</h4>-->
+
+<!--                <p>paragraph 1</p>-->
+<!--                <p>paragraph 2</p>-->
+<!--                <p>paragraph 3</p>-->
+<!--                <p>paragraph 4</p>-->
+
+<!--                <button>-->
+<!--                    submit-->
+<!--                </button>-->
+<!--            </article>-->
+<!--        </li>-->
+<!--    </ol>-->
+
+<!--    <nav>-->
+<!--        <ul>-->
+<!--            <li><a href="#">link to 1</a></li>-->
+<!--            <li><a href="#">link to 2</a></li>-->
+<!--            <li><a href="#">link to 3</a></li>-->
+<!--            <li><a href="#">link to 4</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+<!--</section>-->
+
+<!--<section>-->
+<!--    <h2>second title paragraph</h2>-->
+
+<!--    <article>-->
+
+<!--        <p>-->
+<!--            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ullam.-->
+<!--        </p>-->
+
+<!--        <p>-->
+<!--            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ullam.-->
+<!--        </p>-->
+
+<!--        <p>-->
+<!--            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ullam.-->
+<!--        </p>-->
+
+<!--        <p>-->
+<!--            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ullam.-->
+<!--        </p>-->
+
+<!--    </article>-->
+
+<!--</section>-->
 
 </body>
 </html>

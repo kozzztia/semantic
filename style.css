@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+h1{
+    border: 1px solid red;
+}
+
 td {
     border: 1px solid gray;
 }
@@ -162,9 +166,6 @@ form {
     }
 }
 
-section, .semantic, .flex{
-    display: none !important;
-}
 
 .flex {
     max-width: 1200px;
@@ -231,7 +232,7 @@ section, .semantic, .flex{
 }
 
 .clip-path {
-    display: block !important;
+    display: block;
     /*background: red;*/
     max-width: 900px;
     margin-inline: auto;
@@ -252,22 +253,72 @@ section, .semantic, .flex{
         &:hover {
             opacity: 0.5;
         }
-
     }
-
  }
 
 @keyframes tiltShadow {
     0% {
         transform: rotateY(5deg) scale(.9);
-        box-shadow: 10px 10px 25px rgba(0,0,0,0.4); /* мягче, светлее */
+        box-shadow: 10px 10px 25px rgba(0,0,0,0.4);
     }
     50% {
         transform: rotateY(-5deg) scale(.9);
-        box-shadow: 10px 10px 55px rgba(0,0,0,0.8); /* глубже, ярче */
+        box-shadow: 10px 10px 55px rgba(0,0,0,0.8);
     }
     100% {
         transform: rotateY(5deg) scale(.9);
         box-shadow: 10px 10px 25px rgba(0,0,0,0.4);
+    }
+}
+
+
+.testDecor{
+    max-width :600px;
+    margin-inline: auto;
+    /*overflow: hidden;*/
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /*clear-fix*/
+
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    figure{
+        max-width: 300px;
+        display: block;
+        overflow: hidden;
+        margin: 0 10px 0 0;
+        background: #000;
+        float: left;
+
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    section{
+        text-align: left;
+    }
+
+    &:nth-child(odd){
+        figure{
+            float: right;
+        }
     }
 }
