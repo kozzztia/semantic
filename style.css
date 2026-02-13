@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-h1{
+h1 {
     border: 1px solid red;
 }
 
@@ -184,6 +184,7 @@ form {
         flex-grow: 1;
         width: 200px;
         justify-content: space-between;
+
         &:nth-child(3) {
             background: yellow;
         }
@@ -192,19 +193,20 @@ form {
             background: red;
 
         }
-        &:is(span){
+
+        &:is(span) {
             background: #000;
         }
     }
 }
 
-.grid{
-    display: grid ;
+.grid {
+    display: grid;
     /*max-width: 1200px;*/
     margin-inline: auto;
     height: 500px;
-    padding :10px;
-    gap : 5px;
+    padding: 10px;
+    gap: 5px;
     background: rgba(132, 98, 98, 0.2);
     grid-template-columns: 200px auto 300px;
     /*justify-content: space-between;*/
@@ -217,10 +219,11 @@ form {
     /*grid-auto-columns: 100px 200px;*/
 
 
-    .grid-item{
+    .grid-item {
         background: rgba(0, 128, 0, 0.2);
-        &.big{
-        /*&:last-of-type {*/
+
+        &.big {
+            /*&:last-of-type {*/
             background: rgba(214, 168, 56, 0.2);
             /*grid-column: span 2;*/
             grid-column: -1 / 1;
@@ -239,41 +242,42 @@ form {
     perspective: 800px;
 
 }
+
 .clip-path img {
-     width: 100%;
-     height: 100%;
-     display: block;
-     border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 4px;
     transform-origin: 0 0;
-     transform: rotateY(5deg) scale(.9);
-     box-shadow: 10px 10px 40px rgba(0,0,0,0.6);
-     animation: tiltShadow 4s ease-in-out infinite;
+    transform: rotateY(5deg) scale(.9);
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.6);
+    animation: tiltShadow 4s ease-in-out infinite;
 
     @media (hover: hover) {
         &:hover {
             opacity: 0.5;
         }
     }
- }
+}
 
 @keyframes tiltShadow {
     0% {
         transform: rotateY(5deg) scale(.9);
-        box-shadow: 10px 10px 25px rgba(0,0,0,0.4);
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
     }
     50% {
         transform: rotateY(-5deg) scale(.9);
-        box-shadow: 10px 10px 55px rgba(0,0,0,0.8);
+        box-shadow: 10px 10px 55px rgba(0, 0, 0, 0.8);
     }
     100% {
         transform: rotateY(5deg) scale(.9);
-        box-shadow: 10px 10px 25px rgba(0,0,0,0.4);
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
     }
 }
 
 
-.testDecor{
-    max-width :600px;
+.testDecor {
+    max-width: 600px;
     margin-inline: auto;
     /*overflow: hidden;*/
 
@@ -282,27 +286,31 @@ form {
         display: table;
         clear: both;
     }
+
     /*clear-fix*/
 
-    *{
+    * {
         box-sizing: border-box;
         padding: 0;
         margin: 0;
     }
 
-    h2{
+    h2 {
         text-align: center;
     }
 
-    figure{
+    figure {
         max-width: 300px;
         display: block;
         overflow: hidden;
         margin: 0 10px 0 0;
-        background: #000;
         float: left;
 
-        img{
+        figcaption {
+            text-align: center;
+        }
+
+        img {
             width: 100%;
             height: auto;
             display: block;
@@ -312,13 +320,97 @@ form {
         }
     }
 
-    section{
+    section {
         text-align: left;
     }
 
-    &:nth-child(odd){
-        figure{
+    &:nth-child(odd) {
+        figure {
             float: right;
         }
     }
+}
+
+.flexTest {
+    max-width: 1200px;
+    margin-inline: auto;
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        background: rgba(128, 128, 128, 0.2);
+        padding-inline: 10px;
+
+        .logo {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            gap: 10px;
+
+            img {
+                width: 100px;
+                height: 50px;
+                display: block;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            figcaption {
+                text-align: center;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+        }
+
+        nav > ul {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            gap: 10px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            @media (max-width: 1024px) {
+                display: none;
+            }
+        }
+
+        li > a {
+            text-decoration: none;
+            color: green;
+            text-transform: uppercase;
+            display: block;
+            padding-inline: 10px;
+        }
+
+        button{
+            display: none;
+            height: 100%;
+            border: none;
+            outline: none;
+            background: green;
+            color: white;
+            margin: 0;
+            position: relative;
+
+            @media (max-width: 1024px) {
+                display: block;
+            }
+        }
+        button::before,
+        button::after{
+            content: "";
+            display: block;
+            height: 4px;
+            background: white;
+            margin: 6px 0;
+        }
+
+    }
+
+
 }
