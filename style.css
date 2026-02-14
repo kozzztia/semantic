@@ -387,7 +387,7 @@ form {
             padding-inline: 10px;
         }
 
-        button{
+        button {
             display: none;
             height: 100%;
             border: none;
@@ -401,8 +401,9 @@ form {
                 display: block;
             }
         }
+
         button::before,
-        button::after{
+        button::after {
             content: "";
             display: block;
             height: 4px;
@@ -412,5 +413,30 @@ form {
 
     }
 
+
+}
+
+.flexTestNext {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    .box {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 128, 0, 0.2);
+
+        &:nth-child(3n) {
+            background: rgba(143, 39, 36, 0.2);
+        }
+
+        &:nth-of-type(2) {
+            background: red;
+        }
+    /*    попал на див*/
+    }
 
 }
