@@ -419,15 +419,17 @@ form {
 .flexTestNext {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 10px;
 
     .box {
-        width: 100px;
+        width: 200px;
         height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
         background: rgba(0, 128, 0, 0.2);
+        flex: 1 1 200px;
 
         &:nth-child(3n) {
             background: rgba(143, 39, 36, 0.2);
@@ -436,7 +438,55 @@ form {
         &:nth-of-type(2) {
             background: red;
         }
-    /*    попал на див*/
+
+        /*    попал на див*/
     }
 
+}
+
+.test {
+    max-width: 620px;
+    margin-inline: auto;
+    background: rgba(255, 223, 171, 0.2);
+    padding: 10px;
+}
+
+.inline-block-test {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    .block{
+        width : 200px;
+        height: 50px;
+        border: 1px solid red;
+        text-align: center;
+        display: inline-block;
+
+
+    }
+}
+
+
+.form-test fieldset {
+    border: 1px solid #8f2724;
+    background: rgba(143, 39, 36, 0.1);
+    padding: 5px;
+}
+
+.form-test label {
+    display: block;       /* текст сверху */
+    margin-bottom: 5px;
+}
+
+.form-test input {
+    width: 100%;          /* поле растягивается */
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.form-test button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 1rem auto 0;
+    padding: 5px 10px;
 }
