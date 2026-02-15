@@ -594,6 +594,14 @@ td {
             &:nth-child(5) + & {
                 background: pink;
             }
+            /*каждый  2 начиная  с 3*/
+            &:nth-child(2n + 3) {
+                background: #000;
+            }
+            /*каждый  2 начиная  с 3 с конца*/
+            &:nth-last-child(2n + 3) {
+                background: #FFF;
+            }
 
         }
     }
