@@ -53,7 +53,6 @@
 
     <div class="popup">
         <div class="content">
-
             <button aria-label="close popup" type="button" class="btn close" onclick="togglePopup()">
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -74,20 +73,17 @@
                 <p>Aspernatur consequatur dolor ea minus quas quo recusandae repellendus sed?</p>
                 <p>Beatae culpa esse illo ipsam perspiciatis? Modi tenetur vel voluptates.</p>
             </article>
-
-
         </div>
-
     </div>
 
-            <script>
-                function togglePopup() {
-                    const popup = document.querySelector('.popup');
-                    const body = document.querySelector('body');
-                    popup.classList.toggle('visible');
-                    body.classList.toggle('no-scroll');
-                }
-            </script>
+    <script>
+        function togglePopup() {
+            const popup = document.querySelector('.popup');
+            const body = document.querySelector('body');
+            popup.classList.toggle('visible');
+            body.classList.toggle('no-scroll');
+        }
+    </script>
 </section>
 
 <!--<section class="cover" style="background-image: url(image/girl-2.jpg);">-->
