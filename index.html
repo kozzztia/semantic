@@ -9,60 +9,76 @@
     <title>semantic</title>
 </head>
 <body>
-<h1>once title</h1>
+<h1>once title</h1>\
 
-<section class="image-loading">
-    <figure class="image loading">
-
-        <img src="image/girl-2.jpg" alt="girl 3" loading="lazy">
-
-    </figure>
-
-    <figure class="image loading">
-
-        <img src="image/girl-2.jpg" alt="girl 3" loading="lazy">
-
-    </figure>
-
-    <figure class="image loading">
-
-        <img src="image/girl-2.jpg" alt="girl 3" loading="lazy">
-
-    </figure>
-
-    <figure class="image loading">
-
-        <img src="image/girl-2.jpg" alt="girl 3" loading="lazy">
-
-    </figure>
-
-    <figure class="image loading">
-
-        <img src="image/girl-6.jpg" alt="girl 3" loading="lazy">
-
-    </figure>
-
-    <script defer>
-        const wrapper = document.querySelector('.image-loading');
-        const images = wrapper.querySelectorAll('.image');
-
-        images.forEach(image => loadImages(image));
-
-        function loadImages(image) {
-
-            const img = image.querySelector('img');
-            img.onload = () => {
-                image.classList.remove('loading');
-            }
-            img.onerror = () => {
-                image.classList.remove('loading');
-                image.classList.add('error');
-            };
-
-        }
-
-    </script>
+<section class="inlineBlockWrapper">
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
 </section>
+
+<!--<section class="image-loading">-->
+<!--    <figure class="image loading">-->
+
+<!--        <img src="image/girl.jpg" alt="girl 3" loading="lazy">-->
+
+<!--    </figure>-->
+
+<!--    <figure class="image loading">-->
+
+<!--        <img src="image/girl-2.jpg" alt="girl 3" loading="lazy">-->
+
+<!--    </figure>-->
+
+<!--    <figure class="image loading">-->
+
+<!--        <img src="image/girl-3.jpg" alt="girl 3" loading="lazy">-->
+
+<!--    </figure>-->
+
+<!--    <figure class="image loading">-->
+
+<!--        <img src="image/girl-4.jpg" alt="girl 3" loading="lazy">-->
+
+<!--    </figure>-->
+
+<!--    <figure class="image loading">-->
+
+<!--        <img src="image/girl-6.jpg" alt="girl 3" loading="lazy">-->
+
+<!--    </figure>-->
+
+<!--    <script defer>-->
+<!--        document.addEventListener('DOMContentLoaded', () => {-->
+<!--            const wrapper = document.querySelector('.image-loading');-->
+<!--            if (!wrapper) return;-->
+
+<!--            const images = wrapper.querySelectorAll('.image img');-->
+
+<!--            images.forEach(img => {-->
+<!--                img.addEventListener('load', () => {-->
+<!--                    img.closest('.image')?.classList.remove('loading');-->
+<!--                });-->
+
+<!--                img.addEventListener('error', () => {-->
+<!--                    const container = img.closest('.image');-->
+<!--                    img.remove();-->
+
+<!--                    if (container) {-->
+<!--                        container.classList.remove('loading');-->
+<!--                        container.classList.add('error');-->
+<!--                    }-->
+<!--                });-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
+<!--</section>-->
 
 <!--<section class="popup-wrapper">-->
 <!--    <header>-->
