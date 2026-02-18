@@ -27,17 +27,23 @@ h1 {
     container-type: inline-size;
     container-name: block;
 
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    will-change: transform;
+
     .block{
         width :100%;
         max-width: 300px;
         aspect-ratio: 1/1;
-        scale: 1;
         rotate: 2deg;
         z-index: auto;
         transition: all .2s;
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, .2);
         cursor: pointer;
         background-color: #fff;
+        position: relative;
+        overflow: hidden;
+        transform: translateZ(0) scale(1);
 
         img{
             width: 100%;
@@ -45,48 +51,57 @@ h1 {
             display: block;
             object-fit: cover;
             object-position: center;
-            scale: 0.8;
             transition: all .2s;
+            backface-visibility: hidden;
+            border-radius: 2px;
+            transform: scale(0.8);
         }
 
         &:nth-child(6n+1) {
-            rotate: -5deg;
-            scale: .95;
+            /*rotate: -5deg;*/
+            /*scale: .95;*/
+            transform: rotate(-5deg) scale(.95);
         }
 
         &:nth-child(6n+2) {
-            rotate: 7deg;
-            scale: 1.1;
+            /*rotate: 7deg;*/
+            /*scale: 1.1;*/
+             transform: rotate(7deg) scale(1.1);
         }
 
         &:nth-child(6n+3) {
-            rotate: 5deg;
-            scale: .90;
+            /*rotate: 5deg;*/
+            /*scale: .9;*/
+             transform: rotate(5deg) scale(.9);
         }
 
         &:nth-child(6n+4) {
-            rotate: 3deg;
-            scale: 1.05;
+            /*rotate: 3deg;*/
+            /*scale: 1.05;*/
+             transform: rotate(3deg) scale(1.05);
         }
 
         &:nth-child(6n+5) {
-            rotate: -6deg;
-            scale: 0.95;
+            /*rotate: -6deg;*/
+            /*scale: 0.95;*/
+             transform: rotate(-6deg) scale(.95);
         }
 
         &:nth-child(6n+6) {
-            rotate: -7deg;
-            scale: 1.1;
+            /*rotate: -7deg;*/
+            /*scale: 1.1;*/
+             transform: rotate(-7deg) scale(1.1);
         }
 
         &:nth-child(1n):hover{
-            rotate: 0deg;
-            scale: 1.1;
-            z-index: 1;
-            box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+            /*rotate: 0deg;*/
+            /*scale: 1.1;*/
+            z-index: 200;
+            box-shadow: 1px 1px 80px rgba(0, 0, 0, .3);
+            transform: rotate(0deg) translateZ(30px)  scale(1.1);
 
             img{
-                scale: 1;
+                transform: scale(1);
             }
         }
 
