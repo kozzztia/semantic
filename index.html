@@ -6,76 +6,134 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="fonts/new.css"/>
     <title>semantic</title>
 </head>
 <body>
-<h1>once title</h1>\
+<h1>once title</h1>
 
-<section class="inlineBlockWrapper">
+<section class="wrapper">
     <div class="block">
-        <img src="image/girl.jpg" alt="">
+        <i class="icon icon-cloud"></i>
     </div>
     <div class="block">
-        <img src="image/girl-2.jpg" alt="">
+        <i class="icon icon-cloud-rain"></i>
+    </div>
+
+    <div class="block">
+        <svg>
+            <use href="image/sprite.svg#icon-cloud"></use>
+        </svg>
     </div>
     <div class="block">
-        <img src="image/girl-3.jpg" alt="">
+        <svg>
+            <use href="image/sprite.svg#icon-cloud-sun"></use>
+        </svg>
     </div>
-    <div class="block">
-        <img src="image/girl-4.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl-2.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl-3.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl-4.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl-2.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl-2.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl-3.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl-4.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl-2.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl-3.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl-4.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl-2.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl-3.jpg" alt="">
-    </div>
-    <div class="block">
-        <img src="image/girl-4.jpg" alt="">
-    </div>
+
 </section>
+
+<section class="card">
+    <picture class="card__picture">
+        <source media="(min-width: 1024px)" srcset="image/girl-2.jpg">
+        <source media="(min-width: 600px)" srcset="image/girl-3.jpg">
+        <img src="image/girl.jpg" alt="girl">
+    </picture>
+
+    <article class="card__article">
+        <h2 class="card__title">photographer</h2>
+
+        <address class="card__description">
+            <p class="card__name">Lorem ipsum dolor</p>
+            <a class="card__link" href="">photographer@ukr.net</a>
+        </address>
+    </article>
+
+    <div class="triangle" aria-hidden="true"></div>
+</section>
+
+<!--<section class="form">-->
+<!--    <form action="">-->
+<!--        <label>-->
+<!--            <input type="text" placeholder="enter text here" />-->
+<!--        </label>-->
+<!--        <label>-->
+<!--            <input type="search" placeholder="search here" />-->
+<!--        </label>-->
+<!--    </form>-->
+<!--</section>-->
+
+<!--<section class="inlineBlockWrapper">-->
+<!--    <div class="block text">-->
+<!--        <p>display: table</p>-->
+<!--    </div>-->
+<!--    <div class="block centred">-->
+<!--        <p>center</p>-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl-2.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl-3.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl-4.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl-2.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl-3.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl-4.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl-2.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl-2.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl-3.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl-4.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl-2.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl-3.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl-4.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl-2.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl-3.jpg" alt="">-->
+<!--    </div>-->
+<!--    <div class="block">-->
+<!--        <img src="image/girl-4.jpg" alt="">-->
+<!--    </div>-->
+<!--</section>-->
 
 <!--<section class="image-loading">-->
 <!--    <figure class="image loading">-->
@@ -208,9 +266,6 @@
 <!--        }-->
 <!--    </script>-->
 <!--</section>-->
-
-
-
 
 
 <!--<section class="cover" style="background-image: url(image/girl-2.jpg);">-->

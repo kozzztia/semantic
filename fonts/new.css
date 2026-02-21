@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "new";
+    src: url("./new.ttf?26a26b6c996a77ce5c1674d37f5199ab") format("truetype"),
+url("./new.woff?26a26b6c996a77ce5c1674d37f5199ab") format("woff"),
+url("./new.woff2?26a26b6c996a77ce5c1674d37f5199ab") format("woff2");
+}
+
+.icon:before {
+    font-family: new !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon.icon-cloud-rain:before {
+    content: "\f101";
+}
+.icon.icon-cloud-sun:before {
+    content: "\f102";
+}
+.icon.icon-cloud:before {
+    content: "\f103";
+}
